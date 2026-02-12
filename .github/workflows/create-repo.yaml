@@ -31,6 +31,6 @@ jobs:
       - name: Terraform Apply
         run: terraform -chdir=src/terraform apply -auto-approve
         env:
-          TF_VAR_github_token: ${{ secrets.GITHUB_TOKEN }}
+          TF_VAR_github_token: ${{ secrets.GH_PAT }}
           TF_VAR_github_owner: "CloudRader"
           TF_VAR_repo_name: "org-repo-test"
