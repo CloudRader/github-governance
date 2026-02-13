@@ -12,6 +12,10 @@ on:
       visibility:
         description: "Repository visibility (public/private)"
         required: true
+        type: choice
+        options:
+          - public
+          - private
         default: "public"
 
 permissions:
