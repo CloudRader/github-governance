@@ -12,3 +12,13 @@ variable "repo_name" {
   type        = string
   description = "Name of the repository to create"
 }
+
+variable "repo_description" {
+  type        = string
+  description = "Description of the repository to create"
+}
+
+variable "visibility" {
+  type        = string
+  description = "Repository visibility (public/private)"
+}

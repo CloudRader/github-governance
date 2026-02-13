@@ -1,6 +1,6 @@
 resource "github_repository" "create_repository" {
-  name        = "test-repo-iac"
+  name        = var.repo_name
   description = "My awesome codebase"
 
-  visibility = "public"
+  visibility = var.visibility
 }
